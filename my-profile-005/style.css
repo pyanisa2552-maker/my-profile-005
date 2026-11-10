@@ -1,61 +1,151 @@
 * {
-    box-sizing : border-box;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: sans-serif;
-    background-color: fuchsia;
-    margin: 0%;
-    padding: 30px 16px;
-    color: hotpink;
+body {
+  font-family: sans-serif;
+  background-color: fuchsia;
+  margin: 0;
+  padding: 0;
+  color: hotpink;
 }
 
-.profile-card {
-    max-width: 600px;
-    margin: 30px auto;
-    padding: 30px;
-    background: #f1f8f1;
-    border-radius: 16px;
-    box-sizing: 0 8px 24 px rgba(15, 39, 71,0.12);
-
+/* Header & Navigation */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: deeppink;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: hotpink;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: deeppink;
+}
+
+/* Container */
+.container {
+  padding: 20px 16px;
+}
+
+/* Content Cards & Profile Card (ใช้สไตล์เดิมของคุณภู่) */
+.profile-card,
+.content-card {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 30px;
+  background: #f1f8f1;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(15, 39, 71, 0.12);
+  line-height: 1.8;
+}
+
 .photo {
-    max-width: 300px;
-    border-radius: 50%;
+  max-width: 300px;
+  border-radius: 50%;
 }
 
-h1 {
-    color: deeppink;
-    text-align: center;
+h1,
+h2 {
+  color: deeppink;
+  text-align: center;
 }
 
-
-.profile-card {
-    line-height: 1.8;
-}
 .motto {
-    margin-top: 24px;
-    padding: 16px;
-    background: #e7e3e3;
-    border-left: 5px solid #2563eb;
-    border-radius: 8px;
-}
-button {
-    margin-top: 16px;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 8px;
-    background: #eceef1;
-    color: bisque;
-    font-size: 16px;
-    cursor:pointer;
-}
-button:hover {
-    background: #b12994;
+  margin-top: 24px;
+  padding: 16px;
+  background: #e7e3e3;
+  border-left: 5px solid #2563eb;
+  border-radius: 8px;
 }
 
-#message {
-    color: #8c2a2a;
-    font-weight: bold;
-    
+.motto h2 {
+  text-align: left;
+  margin-top: 0;
+}
+
+button {
+  margin-top: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #b12994;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: deeppink;
+}
+
+#greetingMessage {
+  color: #8c2a2a;
+  font-weight: bold;
+}
+
+/* Skills Section Styles */
+.skills-list {
+  list-style-type: square;
+  padding-left: 20px;
+  color: #333;
+}
+
+/* Projects Section Styles */
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.project-item {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid deeppink;
+}
+
+.project-item h3 {
+  margin: 0 0 8px 0;
+  color: deeppink;
+}
+
+.project-item p {
+  margin: 0;
+  color: #444;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  color: deeppink;
+  margin-top: 40px;
+  font-weight: bold;
 }
